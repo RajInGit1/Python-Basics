@@ -27,5 +27,26 @@ def PrimeNo(num):
 num = int(sys.argv[1])
 print(PrimeNo(num))'''
 
-import sys
-print(sys.argv[1])
+#import sys
+#print(sys.argv[1])
+
+
+def prime_number(n):
+
+    i = 2
+
+    while n > i:
+
+        if n % i == 0:
+            print(f'{n} Not Prime Number')
+
+            break
+        i = i + 1
+
+    else:
+        print(f'{n} Prime Number')
+
+prime_number(1)
+prime_number(2)
+prime_number(11)
+prime_number(12)
